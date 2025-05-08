@@ -15,10 +15,10 @@ import jakarta.persistence.Table;
 @NamedQueries({
     @NamedQuery(
         name = "getAllTasks",
-        query = "SELECT t FROM Message AS t ORDER BY t.id DESC"
+        query = "SELECT m FROM Task AS m ORDER BY m.id DESC"
     )
 })
-@Table(name = "messages")
+@Table(name = "task")
 public class Task {
     @Id
     @Column
